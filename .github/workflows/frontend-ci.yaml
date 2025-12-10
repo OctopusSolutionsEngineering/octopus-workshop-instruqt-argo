@@ -24,7 +24,7 @@ jobs:
         id: version
         run: |
           YEAR=$(date +'%y')
-          VERSION="${YEAR}.1.${{ github.run_number }}"
+          VERSION="${YEAR}.4.${{ github.run_number }}"
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
 
       # Compute GHCR namespace and repo correctly
